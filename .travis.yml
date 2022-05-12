@@ -9,4 +9,5 @@ jobs:
 #   - ppc64le
 
 script:
+  - echo "OS Release"
   - cat /etc/os-release
