@@ -9,5 +9,15 @@ jobs:
 #   - ppc64le
 
 script:
-  - cat /etc/os-release
+  - echo "Architecture: "
   - uname -m
+  - echo "OS Release: "
+  - cat /etc/os-release
+  - echo "CPU Info: "
+  - cat /proc/cpuinfo
+  - echo "Mem Info:"
+  - cat /proc/meminfo
+  - echo "Disk Usage:"
+  - df
+  - echo "Speedtest:"
+  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
