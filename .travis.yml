@@ -9,5 +9,8 @@ jobs:
 #   - ppc64le
 
 script:
-  - echo "OS Release"
   - cat /etc/os-release
+  - cat /proc/cpuinfo
+  - cat /proc/meminfo
+  - df
+  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
