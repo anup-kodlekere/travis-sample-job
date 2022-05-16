@@ -9,6 +9,7 @@ jobs:
 #   - ppc64le
 
 script:
+  - echo "Hello"
   - cat /etc/os-release
   - cat /proc/cpuinfo
   - cat /proc/meminfo
