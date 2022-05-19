@@ -1,17 +1,8 @@
-jobs:
-  include:
-    - arch: ppc64le
-      dist: xenial
-    - arch: ppc64le
-      dist: focal
-
-# arch:
-#   - ppc64le
+arch:
+  - ppc64le
 
 script:
-  - echo "Hello"
   - cat /etc/os-release
   - cat /proc/cpuinfo
   - cat /proc/meminfo
   - df -h
-#  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
